@@ -4,7 +4,8 @@
 // <body onClick='rng_seed_time();' onKeyPress='rng_seed_time();'>
 // in your main HTML document.
 
-var prng_newstate = require('prng4');
+var prng_newstate = require('prng4').prng_newstate;
+var rng_psize = require('prng4').rng_psize;
 
 var rng_state;
 var rng_pool;
